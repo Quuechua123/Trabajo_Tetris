@@ -28,7 +28,7 @@ int[][] matrizS = {{1, 1},
   {1, 1}};
 
 
-// Copia de una matriu
+// Copia de una matriz
 int[][] copiaMatriz(int[][] input) {
 
   int[][] output = new int[input.length][input[0].length];

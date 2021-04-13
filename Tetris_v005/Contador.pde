@@ -1,6 +1,6 @@
 class Contador {
 
-  // Valor del comptador
+  // Valor del contador
   int value = 100;
   int minValue= 0, maxValue = 100;
   int stepValue = 10;

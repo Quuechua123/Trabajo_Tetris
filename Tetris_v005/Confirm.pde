@@ -1,9 +1,9 @@
 class Confirm {
   
-  // Dimensions
+  // Dimensiones
   float x, y, w, h;
   
- // Propietats
+ // Propiedades
  PImage img;
  String title;
  String message;
@@ -51,7 +51,7 @@ class Confirm {
    }
  }
  
- // Dibuixa el Confirm
+ // Dibuja la Confirmación
  
  void display(){
    
@@ -60,22 +60,22 @@ class Confirm {
      
      pushStyle();
      
-     // Rectangle
+     // Rectángulo
      stroke(0); strokeWeight(2);fill(200, 200, 100);
      rectMode(CORNER);
      rect(x, y, w, h, b/2);
      
      line(x, y + 2*b , x+w, y + 2*b);
      
-     // Títol
+     // Título
      fill(0); textSize(38); textAlign(LEFT);
      text(title, x + b, y + 1.4*b);
      
-     // Missatge
+     // Mensaje
      fill(0);textSize(24); textAlign(CENTER);
      text(message, x + w/2, y + 4*b);
      
-     // Botons d'Acceptar i Cancelar
+     // Botones de Aceptar y Cancelar
      bAceptar.display();
      bCancelar.display();
      popStyle();

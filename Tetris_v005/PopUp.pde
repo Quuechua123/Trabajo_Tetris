@@ -3,7 +3,7 @@ class PopUp {
   // Dimensiones
   float x, y, w, h;
   
- // Propietats
+ // Propiedades
  PImage img;
  String title;
  String message;

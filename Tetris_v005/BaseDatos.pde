@@ -1,4 +1,4 @@
-// Objecto de conexión a la BBDD
+// Objeto de conexión a la BBDD
 MySQL msql;
 
 // Paràmetres de la connexió
@@ -7,22 +7,22 @@ String pass     = "";
 String database = "tetris";
 
 
-// Connexió
+// Conexión
 void conecta() {
 
   msql = new MySQL( this, "localhost", database, user, pass );
 
-  // Si la connexió s'ha establert
+  // Si la conexión se ha establecido
   if (msql.connect()) {
-    // La connexió s'ha establert correctament
+    // La conexión se ha establecifo correctamente
     println("Conexión establecida :)");
   } else {
-    // La connexió ha fallat!!!
+    // La conexión ha fallado
     println("Error de Conexión :(");
   }
 }
 
-// Obté el número de files de la taula
+// Obtén el número de filas de la tabla
 int getNumRowsTabla(String nomTabla) {
   msql.query( "SELECT COUNT(*) AS n FROM %s", nomTabla );
   msql.next();
@@ -30,7 +30,7 @@ int getNumRowsTabla(String nomTabla) {
   return numRows;
 }
 
-// Obté informació de la taula Unitat
+// Obtén la información de la taula Unitat
 String[][] getInfoTablaPartida() {
 
   int numRows = getNumRowsTabla("Partida");

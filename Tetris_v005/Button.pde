@@ -1,15 +1,15 @@
-// Classe Boton
+// Clase Botón
 
 class Button {
 
-  // Propiedades de un boton
+  // Propiedades de un botón
   float x, y, w, h;
   color fillColor, strokeColor;
   color fillColorOver, fillColorDisabled;
   String textBoto;
   boolean enabled;
 
-  // Metodo Constructor
+  // Método Constructor
   Button(String text, float x, float y, float w, float h) {
     this.textBoto = text;
     this.x = x;

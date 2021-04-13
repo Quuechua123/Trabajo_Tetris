@@ -63,7 +63,7 @@ void initButtons() {
   bConfig.setEnabled(false);
   bSalida = new Button("Salida", width-200, height-200, buttonW2, buttonH2);
   bReset = new Button("Resetear Ajustes", width/2-165, 900, 350, 50);
-  b1 = new Button("Inserir", width/2-260, 3*height/4, compW, compH);
+  b1 = new Button("Insertar", width/2-260, 3*height/4, compW, compH);
   b2 = new Button("Reset", 2*width/4+20, 3*height/4, compW, compH);
 }
 

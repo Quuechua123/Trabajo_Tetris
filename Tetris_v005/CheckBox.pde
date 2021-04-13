@@ -1,9 +1,9 @@
 class CheckBox {
 
-  // Propietats
+  // Propiedades
   int x, y, w;
 
-  // Colors
+  // Colores
   color bgColor;
   color borderColor;
   color checkedColor;
@@ -22,7 +22,7 @@ class CheckBox {
   }
 
 
-  // Dibuixa el CheckBox
+  // Dibuja el CheckBox
   void display() {
     pushStyle();
     rectMode(CORNER);
@@ -47,13 +47,13 @@ class CheckBox {
     this.checked = b;
   }
 
-  // Canvia l'estat de selecció
+  // Cambia el estado de selección
   void toggle() {
     this.checked = ! this.checked;
   }
 
 
-  // Mira si el ratolí està sobre el checkbox
+  // Mira si el ratón está sobre el checkbox
   boolean onMouseOver() {
     return  mouseX>= this.x && 
       mouseX<= this.x + this.w &&

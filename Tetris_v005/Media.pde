@@ -1,8 +1,8 @@
 import processing.sound.*;
 
-// Imégenes
+// Imágenes
 PImage imgLogo, imgFondo, iconoMas, iconoMenos;
-//Load Fonts
+//Load Fuentes
 PFont font1, font2;
 // Audios
 SoundFile audio1, audio2;

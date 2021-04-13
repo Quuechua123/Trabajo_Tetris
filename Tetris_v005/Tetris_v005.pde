@@ -44,7 +44,7 @@ void draw() {
 
   image(imgFondo, 0, 0, width, height);   //Imagen de fondo
 
-  // Dibuixa la pantalla corresponent
+  // Dibuja la pantalla correspondiente
   switch(pantalla) {
   case MENU: 
     dibujaPantallaMenu(); 
@@ -64,10 +64,10 @@ void jugar() {
 
   pushMatrix();
   translate(t.x, t.y);
-  // Dibuixa el tauler
+  // Dibuja el tablero
   t.dibuja();
 
-  // Dibuixa la figura actual
+  // Dibuja la figura actual
   t.dibuja(figActual);
 
   popMatrix();
